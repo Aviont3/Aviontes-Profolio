@@ -1,40 +1,97 @@
+/* Root theme setup */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  text-decoration: none;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: #132852;
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* General reset */
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #132852;
 }
 
+/* Header Container */
+header {
+  width: 100%;
+}
+
+/* Top Banner */
+#head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em;
+  background-color: #132852;
+  color: white;
+  width: 100%;
+  position: relative;
+  z-index: 1001;
+}
+
+#head img {
+  border-radius: 50%;
+  border: 5px solid black;
+  height: 6em;
+}
+
+/* Nav Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+  padding: 0.5em 1em;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav Links */
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  max-width: 1000px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+ul li {
+  margin: 0 1em;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Headline styling */
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2em;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
 }
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;}
 
+/* Buttons (if needed) */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -46,22 +103,31 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Light mode support */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #3e6689;
     background-color: #ffffff;
   }
+
+  nav {
+    background-color: #ffffff;
+  }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
