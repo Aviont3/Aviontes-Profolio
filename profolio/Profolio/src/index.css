@@ -92,6 +92,26 @@ h1 {
   gap: 1em;}
 
 /* Buttons (if needed) */
+.project-container {
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #132852;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

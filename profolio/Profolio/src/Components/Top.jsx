@@ -6,6 +6,10 @@ import headshot from '../assets/headshot.jpg';
 function ProHeader() {
     return (
         <header>
+            <NavLink
+                to="/"
+                style={{ textDecoration: 'none', color: 'black' }}>
+
         <div id="head">
           <img src={headshot} alt="Headshot of Avionte Williams" />
           <h1>
@@ -15,6 +19,7 @@ function ProHeader() {
             </strong>
           </h1>
         </div>
+                </NavLink>
   
         <nav>
           <ul>

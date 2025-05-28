@@ -3,7 +3,7 @@ import React from 'react';
 
 const ContactInfo = () => {
     return (
-        <div>
+        <div id='contact'>
             <a href="https://linkedin.com/in/avionte-williams">  LinkedIn</a>
             <a href="mailto:Aviontewilliams@gmail.com">  Email</a>
             <a href="https://github.com/aviont3">  GitHub</a>
